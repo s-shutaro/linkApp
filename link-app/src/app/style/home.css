@@ -1,0 +1,31 @@
+.slider-x {
+    /* 以下の設定は必須 */
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    /* スマホ対応のため必須 */
+    overflow-scrolling: touch;
+    /* スマホ対応のため必須 *
+    
+    /* 以下デモ用のデザイン */
+    height: 100vh;
+}
+
+.slider-x>div {
+    /* 以下の設定は必須 */
+    scroll-snap-align: center;
+    height: 100%;
+    width: 100%;
+    flex: none;
+
+    /* 以下デモ用のデザイン */
+    color: #FFF;
+    font-size: 150%;
+    font-weight: bold;
+    /* 文字の上下左右中央寄せのための記述 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
